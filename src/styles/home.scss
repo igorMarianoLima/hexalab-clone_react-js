@@ -1,0 +1,79 @@
+#home-page {
+    section#intro {
+        .container {
+            height: inherit;
+
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        #texto_intro {
+            display: flex;
+            flex-direction: column;
+    
+            h1 {
+                font-size: 13.45vmin;
+                text-transform: uppercase;
+            }
+    
+            div {
+                display: flex;
+
+                margin-top: 25px;
+
+                a {
+                    margin-right: 15px;
+                }
+            }
+        }
+    
+        #video_intro {
+            max-height: calc(min(80vh, 700px));
+    
+            display: flex;
+        }
+    }
+
+    section#nossas_solucoes {
+
+        header {
+            text-align: center;
+
+            h2 {
+                margin-bottom: 20px;
+            }
+        }
+
+        h2 {
+            font-size: 46px;
+        }
+
+        p {
+            font-size: 24px;
+            color: rgb(151, 158, 175);
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    #texto_intro h1 {
+        font-size: 12.5vmin !important;
+    }
+}
+
+@media screen and (max-width: 1049px) {
+    section#intro {
+        .container {
+            flex-direction: column !important;
+        }
+        
+        #texto_intro div {
+            flex-direction: column;
+
+            a {
+                margin: 5px 0;
+            }
+        }
+    }
+}

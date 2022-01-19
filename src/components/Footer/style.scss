@@ -1,0 +1,56 @@
+#rodape {
+    width: 100%;
+
+    address {
+        padding: 20px 0;
+    }
+
+    > div#topo {
+        background-color: rgb(245, 248, 253);
+
+        div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        address {
+            text-align: left;
+
+            p {
+                color: rgb(151, 158, 175);
+                font-weight: 300;
+            }
+        }
+
+        nav {
+            margin: 5px 0;
+
+            ul {
+                width: 25%;
+            }
+
+            li {
+                margin-bottom: 5px;
+
+                a {
+                    font-weight: 300;
+                    color: #000;
+                }
+            }
+
+            li:first-child {
+                margin: 20px 0;
+
+                font-size: 18px;
+            }
+        }
+    }
+
+    > div#creditos {
+        padding: 40px;
+        
+        text-align: center;
+
+        color: rgb(222, 222, 222);
+    }
+}
